@@ -1,0 +1,42 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --bs-primary: #004D4D;
+  --bs-primary-rgb: 0, 77, 77;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('/assets/olive-background.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #003939;
+  --bs-btn-hover-border-color: #003939;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+}
+
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.form-control:focus {
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
